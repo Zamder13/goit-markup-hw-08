@@ -1,3 +1,41 @@
+/* =============================FUNDAMENTAL RULES============================= */
+:root {
+  --accent-color: #2196f3;
+  --main-color: #212121;
+  --paragraph-color: #757575;
+  --hero-color: #2f303a;
+  --section-color: #ffffff;
+
+  --main-font: font-family: 'Roboto', sans-serif;
+  --special-font: font-family: 'Raleway', sans-serif;
+}
+
 body {
-  font-family: roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+color: var(--accent-color);
+}
+
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+}
+.mail-link:focus,
+.mail-link:hover {
+  color: var(--accent-color);
 }
