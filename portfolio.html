@@ -17,9 +17,9 @@
     <header class="header">
         <nav class="navigation">
             <a class="logo-link link list" href="./index.html">
-                <p>
+                <p class="logo-icon">
                     <b>
-                        <span class="logo-icon" style="color: blue;">Wed</span>Studio
+                        <span style="color: blue;">Wed</span>Studio
                     </b>
                 </p>
             </a>
@@ -28,10 +28,10 @@
                     <a class="menu-link link" href="./index.html">Студия</a>
                 </li>
                 <li>
-                    <a class="nav-link link current" href="./portfolio.html">Портфолио</a>
+                    <a class="menu-link link current" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li>
-                    <a class="nav-link link" href="">Контакты</a>
+                    <a class="menu-link link" href="">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -46,76 +46,76 @@
     </header>
     <!-- Основная страница -->
     <main>
+    <!-- Меню проэктов -->
+        <section class="projects">
 
-        <section>
-            <!-- h1 скрыть -->
             <!-- Меню проэктов -->
             <h1 hidden>Проэкты</h1>
-            <ul>
-                <li>
+            <ul class="menu-projects" >
+                <li class="menu-projects-button" >
                     <button type="button">Все</button>
                 </li>
-                <li>
+                <li class="menu-projects-button" >
                     <button type="button">Веб-сайты</button>
                 </li>
-                <li>
+                <li class="menu-projects-button" >
                     <button type="button">Приложения</button>
                 </li>
-                <li>
+                <li class="menu-projects-button" >
                     <button type="button">Дизайн</button>
                 </li>
-                <li>
+                <li class="menu-projects-button" >
                     <button type="button">Маркетинг</button>
                 </li>
             </ul>
         </section>
         <!-- Проэкты -->
-        <section>
-            <ul>
-                <li>
+        <section class="projects-decription">
+            <ul class="projects-decription list">
+                <li class="projects-decription-item">
                     <img src="./images/portfoliopage/технокряк.jpg" alt="лэптоп с открытым сайтом" width="370"
                         height="294">
                     <h2>Технокряк</h2>
                     <p>Веб-сайт</p>
                 </li>
-                <li>
+                <li class="projects-decription-item">
                     <img src="./images/portfoliopage/постер.jpg" alt="постер с двумя баскетболистами" width="370"
                         height="294">
                     <h2 lang="en">Постер New Orlean vs Golden Star</h2>
                     <p>Дизайн</p>
                 </li>
-                <li>
+                <li class="projects-decription-item">
                     <img src="./images/portfoliopage/seafood.jpg" alt="вывеска ресторана" width="370" height="294">
                     <h2>Ресторан Seafood</h2>
                     <p>Приложение</p>
                 </li>
-                <li>
+                <li class="projects-decription-item">
                     <img src="./images/portfoliopage/prime.jpg" alt="наушники" width="370" height="294">
                     <h2>Проект Prime</h2>
                     <p>Маркетинг</p>
                 </li>
-                <li>
+                <li class="projects-decription-item">
                     <img src="./images/portfoliopage/boxes.jpg" alt="белая и коричневая коробки" width="370"
                         height="294">
                     <h2>Проект Boxes</h2>
                     <p>Приложение</p>
                 </li>
-                <li>
+                <li class="projects-decription-item">
                     <img src="./images/portfoliopage/site.jpg" alt="монитор с открытым сайтом" width="370" height="294">
                     <h2>Inspiration has no Borders</h2>
                     <p>Веб-сайт</p>
                 </li>
-                <li>
+                <li class="projects-decription-item">
                     <img src="./images/portfoliopage/limitedededit.jpg" alt="открытая книга" width="370" height="294">
                     <h2>Издание Limited Edition</h2>
                     <p>Дизайн</p>
                 </li>
-                <li>
+                <li class="projects-decription-item">
                     <img src="./images/portfoliopage/lab.jpg" alt="ярлык на веревке" width="370" height="294">
                     <h2>Проект LAB</h2>
                     <p>Маркетинг</p>
                 </li>
-                <li>
+                <li class="projects-decription-item">
                     <img src="./images/portfoliopage/business.jpg" alt="лэптоп с печатающими руками" width="370"
                         height="294">
                     <h2>Growing Business</h2>
@@ -125,13 +125,19 @@
         </section>
     </main>
     <!-- Подвал -->
-    <footer>
-        <p><b><span style="color: blue;" class="logoclass">Wed</span>Studio</b></p>
-        <address>г. Киев, пр-т Леси Украинки, 26</address>
-        <div>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a> <br>
-            <a href="tel:+380961111111">+38-096-111-11-11</a>
-        </div>
+ <footer class="footer">
+        <a class="logo-link link list" href="./index.html">
+            <p>
+                <b>
+                    <span class="logo-icon" style="color: blue;">Wed</span>Studio
+                </b>
+            </p>
+        </a>
+        <address class="town-adress">г. Киев, пр-т Леси Украинки, 26</address>
+        <ul class="contact-footer list">
+            <a class="contact-footer-item link" href="mailto:info@devstudio.com">info@devstudio.com</a> <br>
+            <a class="contact-footer-item link" href="tel:+380961111111">+38-096-111-11-11</a>
+        </ul>
     </footer>
 </body>
 
