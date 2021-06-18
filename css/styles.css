@@ -44,8 +44,8 @@ color: var(--accent-color);
 
 .logo-link  {
   font-family: Raleway;
-font-style: normal;
-font-weight: bold;
+
+font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
@@ -84,7 +84,7 @@ color: var(--paragraph-color);
 
 /* ===============================HERO=============================== */
 .hero-head {
-font-family: Roboto;
+font-family: var(--main-font);
 font-weight: 900;
 font-size: 44px;
 line-height: 1,36;
@@ -102,13 +102,16 @@ color: var(--section-color);
 
 }
 .modal-btn {
+  
   color: var(--section-color);
   background-color: var( --accent-color);
 
-font-weight: bold;
+font-weight: 700;
 font-size: 16px;
 line-height: 1,87;
 letter-spacing: 0.06em;
+
+cursor: pointer;
 
 }
 
@@ -183,8 +186,7 @@ letter-spacing: 0.03em;
 
 .logo-link-footer {
   font-family: Raleway;
-font-style: normal;
-font-weight: bold;
+font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
@@ -212,4 +214,39 @@ color: var(--paragraph-color);
 
 /* =====================PORTFOLIO PAGE====================== */
 
+.port-butn {
+font-family: var(--main-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
 
+  color: var(--main-color);
+  background-color: var(--buttom-port-color);
+
+  cursor: pointer;
+}
+
+.port-butn:hover,
+.port-butn:focus {
+  color: var(--section-color);
+  background-color: var(--accent-color);
+
+}
+
+.projects-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  
+  color: var(--main-color)
+}
+.project-position{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  
+  color: var(--paragraph-color)
+}
