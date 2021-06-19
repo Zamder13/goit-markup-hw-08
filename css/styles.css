@@ -14,6 +14,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
 }
 
 .list {
@@ -127,16 +128,17 @@ cursor: pointer;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--paragraph-color);
 }
 
 .second-section {
-  background-color: var(--second-section);
+  background-color: var(--section-color);
 }
 
 
 /* ===============================WHAT WE ARE DOING====================== */
 .features-section{
-  background-color: var(--second-section);
+  background-color: var(--section-color);
 
 }
 
@@ -164,10 +166,8 @@ letter-spacing: 0.03em;
 .comand-section-position {
   font-size: 16px;
 line-height: 1.18;
-
-
-
 letter-spacing: 0.03em;
+color: var(--paragraph-color);
 }
 
 .comand-section {
