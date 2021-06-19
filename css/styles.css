@@ -88,7 +88,7 @@ color: var(--paragraph-color);
 font-family: var(--main-font);
 font-weight: 900;
 font-size: 44px;
-line-height: 1,36;
+line-height: 1.36;
 
 
 text-align: center;
@@ -159,6 +159,7 @@ line-height: 1.18;
 
 
 
+
 letter-spacing: 0.03em;
 }
 
@@ -208,7 +209,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
-color: var(--paragraph-color);
+color: rgba(255, 255, 255, 0.6);
 
 }
 
