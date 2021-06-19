@@ -250,3 +250,9 @@ letter-spacing: 0.03em;
   
   color: var(--paragraph-color)
 }
+
+.contact-footer-item:hover,
+.contact-footer-item:focus {
+  color: var(--accent-color);
+
+}
