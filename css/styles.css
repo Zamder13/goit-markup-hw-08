@@ -109,8 +109,11 @@ color: var(--section-color);
 
 font-weight: 700;
 font-size: 16px;
-line-height: 1,87;
+line-height: 1.87;
 letter-spacing: 0.06em;
+text-align: center;
+
+
 
 cursor: pointer;
 
@@ -156,11 +159,8 @@ letter-spacing: 0.03em;
   font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
-
-
-
-
 letter-spacing: 0.03em;
+text-align: center;
 }
 
 
@@ -169,6 +169,7 @@ letter-spacing: 0.03em;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--paragraph-color);
+text-align: center;
 }
 
 .comand-section {
@@ -227,6 +228,10 @@ letter-spacing: 0.03em;
   background-color: var(--buttom-port-color);
 
   cursor: pointer;
+}
+.special-but-style {
+  color: var(--section-color);
+  background-color: var(--accent-color);
 }
 
 .port-butn:hover,
