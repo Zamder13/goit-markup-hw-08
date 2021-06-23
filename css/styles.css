@@ -123,20 +123,28 @@ color: var(--section-color);
 
 }
 .modal-btn {
+  display: inline-block;
+
+  min-width: 200px;
+  height: 50px;
   
   color: var(--section-color);
   background-color: var( --accent-color);
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.15);
 
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.06em;
-text-align: center;
+  border: 1px solid transparent;
 
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  
+  text-align: center;
 
+  cursor: pointer;
 
-cursor: pointer;
-
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 /* ============================Second Section========================= */
