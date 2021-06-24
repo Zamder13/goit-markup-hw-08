@@ -54,6 +54,10 @@ ul {
 color: var(--accent-color);
 }
 
+.menu-link {
+  padding: 32px 0;
+}
+
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
@@ -74,38 +78,39 @@ letter-spacing: 0.03em;
 color: var(--main-color)
 }
 
+img {
+  display: block;
+}
+
 /* ==============================HEADER============================== */
 .header {
   background-color: var(section-color);
 }
-.container-nav {
-  width: 1600px;
+
   
-  border: 1px solid #ECECEC
-  
+.container {
+display: flex;
+width: 1170px;
+padding: 0 15px;
 }
 
-
+.logo-link {
+  align-items: center;
+  padding: 24px 0 25px 0;
+  margin-right: 93px;
+}
 
 
  .navigation {
   display: flex;
  }
 
-.header {
-  display: flex;
-}
 
 .menu-list {
   display: flex;
+  align-items: center;
 }
-.menu-item,
-.contact-item {
-  display: block;
-  /* padding: 32px 0; */
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
 
 /* .menu-item {
   margin-right: 50px; */
@@ -135,6 +140,7 @@ color: var(--main-color);
 
 .contact-menu {
   display: flex;
+  align-items: center;
 }
 
 .mail-link,
@@ -145,6 +151,8 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 
 color: var(--paragraph-color);
+
+
 }
 
 
