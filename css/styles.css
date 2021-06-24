@@ -78,6 +78,49 @@ color: var(--main-color)
 .header {
   background-color: var(section-color);
 }
+.container-nav {
+  width: 1600px;
+  
+  border: 1px solid #ECECEC
+  
+}
+
+
+
+
+ .navigation {
+  display: flex;
+ }
+
+.header {
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+}
+.menu-item,
+.contact-item {
+  display: block;
+  /* padding: 32px 0; */
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* .menu-item {
+  margin-right: 50px; */
+
+/* } */
+/* .menu-list .menu-item:last-child {
+  margin-right: 0px;
+}
+.menu-list .menu-item:first-child {
+  margin-left: 0px;
+} */
+.menu-list .menu-item + .menu-item {
+  margin-left: 50px;
+}
+
 
 
 .menu-link {
@@ -90,6 +133,10 @@ letter-spacing: 0.02em;
 color: var(--main-color);
 }
 
+.contact-menu {
+  display: flex;
+}
+
 .mail-link,
 .tel-link {
   font-weight: 500;
@@ -100,6 +147,11 @@ letter-spacing: 0.02em;
 color: var(--paragraph-color);
 }
 
+
+.contact-menu .contact-item + .contact-item {
+  margin-left: 50px;
+}
+ 
 
 
 
@@ -145,6 +197,8 @@ color: var(--section-color);
 
   border-radius: 4px;
   padding: 10px 32px;
+
+  
 }
 
 /* ============================Second Section========================= */
