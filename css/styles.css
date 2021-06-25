@@ -184,6 +184,8 @@ margin: auto;
 
 color: var(--section-color);
 
+margin-top: 200px;
+
 }
 
 .hero {
@@ -204,7 +206,7 @@ text-align: center;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: auto;
+  margin-bottom: 200px;
   
   color: var(--section-color);
   background-color: var( --accent-color);
