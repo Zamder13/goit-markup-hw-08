@@ -43,6 +43,10 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
+
+img {
+  display: block;
+}
 /* =================================================================== */
 
 .menu-list .menu-link.current {
@@ -77,10 +81,19 @@ letter-spacing: 0.03em;
 
 color: var(--main-color)
 }
+/* COntainers */
+.container {
 
-img {
-  display: block;
+width: 1200px;
+padding: 0 15px;
+margin: 0 auto;
 }
+
+
+.box-flex {
+  display: flex;
+}
+/* end containers */
 
 /* ==============================HEADER============================== */
 .header {
@@ -88,11 +101,7 @@ img {
 }
 
   
-.container {
-display: flex;
-width: 1170px;
-padding: 0 15px;
-}
+
 
 .logo-link {
   align-items: center;
@@ -111,20 +120,10 @@ padding: 0 15px;
   align-items: center;
 }
 
-
-/* .menu-item {
-  margin-right: 50px; */
-
-/* } */
-/* .menu-list .menu-item:last-child {
-  margin-right: 0px;
-}
-.menu-list .menu-item:first-child {
-  margin-left: 0px;
-} */
 .menu-list .menu-item + .menu-item {
   margin-left: 50px;
 }
+
 
 
 
@@ -139,8 +138,9 @@ color: var(--main-color);
 }
 
 .contact-menu {
-  display: flex;
+  display:flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .mail-link,
@@ -175,18 +175,32 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
+margin: auto; 
+
 color: var(--section-color);
 
 }
+
 .hero {
-  background-color: var(--hero-color)
+  background-color: var(--hero-color);
+text-align: center;
 
 }
+
+
+
 .modal-btn {
   display: inline-block;
 
-  min-width: 200px;
+  width: 200px;
   height: 50px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   
   color: var(--section-color);
   background-color: var( --accent-color);
@@ -203,10 +217,6 @@ color: var(--section-color);
 
   cursor: pointer;
 
-  border-radius: 4px;
-  padding: 10px 32px;
-
-  
 }
 
 /* ============================Second Section========================= */
@@ -232,7 +242,8 @@ color: var(--section-color);
 /* ===============================WHAT WE ARE DOING====================== */
 .features-section{
   background-color: var(--section-color);
-
+ display: flex;
+ flex-direction: row;
 }
 
 .features-head,
@@ -352,3 +363,29 @@ letter-spacing: 0.03em;
   color: var(--accent-color);
 
 }
+
+.menu-projects {
+  justify-content: center;
+}
+
+
+/* =================ТАблица проэктов=============== */
+.projects-decription {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.projects-decription-item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+}
+.projects-decription-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects-decription-item:nth-last-child(-n + 3) {
+margin-bottom: 0;
+}
+/* =================Конец таблицы проэктов======== */
