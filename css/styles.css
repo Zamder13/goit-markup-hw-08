@@ -189,7 +189,6 @@ color: var(--section-color);
 .hero {
   background-color: var(--hero-color);
 text-align: center;
-
 }
 
 
@@ -205,6 +204,7 @@ text-align: center;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
   
   color: var(--section-color);
   background-color: var( --accent-color);
@@ -393,6 +393,14 @@ color: rgba(255, 255, 255, 0.6);
 
 
 /* =====================PORTFOLIO PAGE====================== */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .port-butn {
 font-family: var(--main-font);
