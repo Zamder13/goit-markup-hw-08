@@ -81,6 +81,11 @@ letter-spacing: 0.03em;
 
 color: var(--main-color)
 }
+
+
+.section {
+  padding: 94px;
+}
 /* COntainers */
 .container {
 
@@ -192,8 +197,7 @@ text-align: center;
 .modal-btn {
   display: inline-block;
 
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
 
@@ -220,11 +224,16 @@ text-align: center;
 }
 
 /* ============================Second Section========================= */
+
+.second-section {
+  background-color: var(--section-color);
+}
+
 .item {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 
 .paragraph {
@@ -234,16 +243,19 @@ text-align: center;
   color: var(--paragraph-color);
 }
 
-.second-section {
-  background-color: var(--section-color);
+.dignity-list {
+  width: 270px;
 }
 
+.dignity-list:not(:last-child),
+.features-menu-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* ===============================WHAT WE ARE DOING====================== */
 .features-section{
   background-color: var(--section-color);
- display: flex;
- flex-direction: row;
+
 }
 
 .features-head,
@@ -252,7 +264,16 @@ text-align: center;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
+
+margin-bottom: 50px;
 }
+
+.features-menu {
+  display: flex;
+    justify-content: center;
+
+}
+
 
 /* =============================Person section============================== */
 
@@ -277,11 +298,45 @@ text-align: center;
   background-color: var(--second-section);
 }
 
-.comand-section-item {
-  background-color: var(--section-color);
+.comand-section-name {
+  margin: 30px auto 10px auto;
 }
 
+.comand-section-position {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* таблица */
 
+.comand-section-item {
+  background-color: var(--section-color);
+
+  width: calc ((100% - 90px) / 4)
+
+}
+.comand-section-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.comand-section-item {
+  width: calc ((100% - 90px) / 4)
+
+}
+
+.comand-section-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.comand-section-item:nth-last-child(-n + 4) {
+margin-bottom: 0;
+} 
+
+.comand-section-item +.comand-section-item {
+  margin-left: 30px;
+}
 /* =======================FOOTER======================== */
 .footer {
   background-color: var(--hero-color);
@@ -294,7 +349,14 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 
+display: inline-block;
+text-align: start;
+margin-top: 60px;
+
+margin-top: 60px;
+
   color: #FFFFFF;
+
 }
 
 .town-adress  {
@@ -303,17 +365,32 @@ letter-spacing: 0.03em;
 line-height: 1.71;
 letter-spacing: 0.03em;
 
+margin-top: 20px;
+
 color: var(--section-color);
 }
+
+.contact-footer {
+  margin-top: 9px;
+}
+
+
 .contact-footer-item {
   font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
+display: inline-block;
+margin-top: 9px;
+
+
+
 color: rgba(255, 255, 255, 0.6);
 
 }
+
+
 
 /* =====================PORTFOLIO PAGE====================== */
 
@@ -329,7 +406,14 @@ letter-spacing: 0.03em;
   background-color: var(--buttom-port-color);
 
   cursor: pointer;
+  
+  border-radius: 4px;
 }
+
+.menu-projects-button:not(:last-child) {
+  margin-right: 8px;
+}
+
 .special-but-style {
   color: var(--section-color);
   background-color: var(--accent-color);
@@ -366,11 +450,12 @@ letter-spacing: 0.03em;
 
 .menu-projects {
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 
 /* =================ТАблица проэктов=============== */
-.projects-decription {
+/* .projects-decription {
   display: flex;
   flex-wrap: wrap;
 
@@ -385,7 +470,26 @@ letter-spacing: 0.03em;
   margin-right: 0;
 }
 
+/* .projects-decription-item:nth-last-child(-n + 3) {
+margin-bottom: 0;
+}  */
+.projects-decription,
+.comand-section-menu {
+  display: flex;
+  flex-wrap: wrap;
+
+} 
+
+.project-description {
+  border: 1px solid transparent;
+  width: calc ((100% - 60px) / 3)
+}
+
+.projects-decription-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .projects-decription-item:nth-last-child(-n + 3) {
 margin-bottom: 0;
-}
+} 
 /* =================Конец таблицы проэктов======== */
