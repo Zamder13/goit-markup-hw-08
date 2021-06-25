@@ -490,8 +490,8 @@ letter-spacing: 0.03em;
   border-bottom: 1px solid ;
 }
 
-.projects-decription-item::first-line {
-  margin-top: 0;
+.del-mrg {
+  margin-top: 0px;
 }
 
 /* =================Конец таблицы проэктов======== */
