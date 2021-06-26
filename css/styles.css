@@ -84,7 +84,7 @@ color: var(--main-color)
 
 
 .section {
-  padding: 94px;
+  padding: 94px 0 0 0;
 }
 /* COntainers */
 .container {
@@ -186,7 +186,6 @@ margin: auto;
 
 color: var(--section-color);
 
-margin-top: 200px;
 
 }
 
@@ -208,7 +207,7 @@ text-align: center;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
+  
   
   color: var(--section-color);
   background-color: var( --accent-color);
@@ -238,6 +237,8 @@ text-align: center;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase; 
+
+  margin-bottom: 10px;
 }
 
 .paragraph {
@@ -300,6 +301,8 @@ text-align: center;
 
 .comand-section {
   background-color: var(--buttom-port-color);
+  
+  padding-bottom: 94px;
 }
 
 .comand-section-name {
@@ -355,9 +358,7 @@ letter-spacing: 0.03em;
 
 display: inline-block;
 text-align: start;
-margin-top: 60px;
 
-margin-top: 60px;
 
   color: #FFFFFF;
 
