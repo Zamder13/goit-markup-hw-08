@@ -192,6 +192,8 @@ color: var(--section-color);
 .hero {
   background-color: var(--hero-color);
 text-align: center;
+padding: 200px;
+
 }
 
 
@@ -314,6 +316,9 @@ text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
 /* таблица */
 
 .comand-section-item {
@@ -347,6 +352,8 @@ margin-bottom: 0;
 /* =======================FOOTER======================== */
 .footer {
   background-color: var(--hero-color);
+
+  padding: 60px;
 }
 
 .logo-link-footer {
@@ -416,8 +423,9 @@ text-align: center;
 letter-spacing: 0.03em;
 
   color: var(--main-color);
-  background-color: #F5F4FA
-;
+  background-color: #F5F4FA;
+
+  padding: 6px 22px;
 
   cursor: pointer;
   
