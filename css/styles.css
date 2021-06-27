@@ -306,6 +306,8 @@ color: var(--paragraph-color);
 text-align: center;
 }
 
+
+/* Падинг в персонажах */
 .comand-section {
   background-color: var(--buttom-port-color);
   
