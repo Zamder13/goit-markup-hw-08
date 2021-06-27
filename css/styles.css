@@ -84,7 +84,7 @@ color: var(--main-color)
 
 
 .section {
-  padding: 94px 0 0 0;
+  padding: 94px 0 0px 0;
 }
 /* COntainers */
 .container {
@@ -266,6 +266,8 @@ padding: 200px;
 .features-section{
   background-color: var(--section-color);
 
+  padding-bottom: 94px;
+
 }
 
 .features-head,
@@ -308,6 +310,7 @@ text-align: center;
   background-color: var(--buttom-port-color);
   
   padding-bottom: 94px;
+  
 }
 
 .comand-section-name {
