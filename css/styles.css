@@ -159,6 +159,9 @@ letter-spacing: 0.02em;
 
 color: var(--paragraph-color);
 
+display: inline-block;
+padding: 32px 0px;
+
 
 }
 
@@ -308,15 +311,17 @@ text-align: center;
 }
 
 .comand-section-name {
-  margin: 30px auto 10px auto;
+  margin: 0px auto 10px auto;
 }
 
 .comand-section-position {
-  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.person-item {
+padding: 30px 0px;
+}
 
 
 /* таблица */
