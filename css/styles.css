@@ -310,7 +310,7 @@ text-align: center;
   background-color: var(--buttom-port-color);
   
   padding-bottom: 94px;
-  
+  padding-top: 94px;
 }
 
 .comand-section-name {
@@ -357,6 +357,8 @@ margin-bottom: 0;
 .comand-section-item +.comand-section-item {
   margin-left: 30px;
 }
+
+
 /* =======================FOOTER======================== */
 .footer {
   background-color: var(--hero-color);
