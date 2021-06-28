@@ -46,6 +46,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 /* =================================================================== */
 
@@ -515,7 +516,7 @@ letter-spacing: 0.03em;
   
   width: calc ((100% - 60px) / 3);
 
-     border-bottom: 1px solid #EEEEEE;
+     
 /*   border-left: 1px solid #EEEEEE ;
   border-right: 1px solid #EEEEEE; */
 }
@@ -534,8 +535,11 @@ letter-spacing: 0.03em;
   padding: 20px 24px;
 
      border-left: 1px solid #EEEEEE ;
-  border-right: 1px solid #EEEEEE; */
+     border-right: 1px solid #EEEEEE; 
+     border-bottom: 1px solid #EEEEEE;
+
 }   
+
 
 
 
