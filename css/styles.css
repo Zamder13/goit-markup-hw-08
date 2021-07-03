@@ -50,6 +50,8 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
 /* =================================================================== */
 
 .menu-list .menu-link.current {
@@ -69,18 +71,25 @@ color: var(--accent-color);
 .tel-link:focus {
   color: var(--accent-color);
   
+}
+
+.tel-link:hover .tel-icon,
+.tel-link:focus .tel-icon {
   fill: var(--accent-color);
 }
 
-.tel-icon:hover,
-.tel-icon:focus {
-  fill: var(--accent-color);
-}
 
 .mail-link:focus,
 .mail-link:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
+
+.mail-link:focus .mail-icon,
+.mail-link:hover .mail-icon {
+  fill: var(--accent-color);
+}
+
 
 .logo-link  {
   font-family: Raleway;
@@ -95,6 +104,11 @@ color: var(--main-color)
 
 
 .section {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+
   padding: 94px 0 0 0;
 }
 
@@ -199,13 +213,6 @@ align-items: center;
   height: 16px;
 }
 
-
-
-
-
-
-
-
 .contact-menu .contact-item + .contact-item {
   margin-left: 50px;
 }
@@ -233,7 +240,21 @@ color: var(--section-color);
 }
 
 .hero {
+  
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--hero-color);
+  background-image: 
+  linear-gradient(rgba(47, 48, 58, 0.4),
+                 rgba(47, 48, 58, 0.4)),
+  url(../images/herosection/Hero.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+
+
 text-align: center;
 padding: 200px;
 
@@ -396,10 +417,17 @@ padding: 30px 32px;
 /* таблица */
 
 .comand-section-item {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+
   background-color: var(--section-color);
 
   width: calc ((100% - 90px) / 4)
 
+  
 }
 .comand-section-menu {
   display: flex;
@@ -407,10 +435,10 @@ padding: 30px 32px;
   justify-content: center;
 }
 
-.comand-section-item {
+/* .comand-section-item {
   width: calc ((100% - 90px) / 4)
 
-}
+} */
 
 .comand-section-item:nth-child(4n) {
   margin-right: 0;
@@ -437,13 +465,20 @@ margin-bottom: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: tomato;
+  background-color: transparent;
+  fill: var(--icon-color)
 }
 
 .social-list-icon {
   width: 20px;
   height: 20px;
 
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--section-color);
 }
 
 
@@ -560,6 +595,61 @@ color: rgba(255, 255, 255, 0.6);
 
 }
 
+
+.join-us-head {
+  
+  color: var(--section-color);
+
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+
+
+.join-us-menu {
+  display: flex;  
+
+  margin-top: 20px;
+  
+}
+
+.social-link-footer {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0.1);
+  fill: var(--section-color);
+}
+
+.social-link-footer:focus,
+.social-link-footer:hover {
+  background-color: var(--accent-color);
+}
+
+.icon-footer {
+  width: 20px;
+  height: 20px;
+}
+
+.join-us {
+  align-items: center;
+  margin-left: 70px;
+
+}
+
+.join-us-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: baseline;
+}
 
 
 /* =====================PORTFOLIO PAGE====================== */
@@ -685,7 +775,15 @@ letter-spacing: 0.03em;
 
 }   
 
+.projects-decription-item:hover,
+.projects-decription-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);;
+}
 
+.menu-projects-button:hover,
+.menu-projects-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);;
+}
 
 
 
