@@ -104,11 +104,6 @@ color: var(--main-color)
 
 
 .section {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-
-
   padding: 94px 0 0 0;
 }
 
@@ -248,15 +243,15 @@ color: var(--section-color);
   linear-gradient(rgba(47, 48, 58, 0.4),
                  rgba(47, 48, 58, 0.4)),
   url(../images/herosection/Hero.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
-
+  width: 1600px;
 
 
 text-align: center;
-padding: 200px;
+padding: 200px 0;
 
 }
 
@@ -334,9 +329,6 @@ background-color: var(--buttom-port-color);
 
   width: 270px; 
   height: 120px;
-
-  
-  padding: 25px 100px;
 
   margin-bottom: 30px;
 }
