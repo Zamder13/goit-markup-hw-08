@@ -327,6 +327,10 @@ padding: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  
+
+background-color: var(--buttom-port-color);
 
   width: 270px; 
   height: 120px;
