@@ -247,7 +247,7 @@ color: var(--section-color);
   background-repeat: no-repeat;
   background-position: center;
 
-  width: 1600px;
+  max-width: 1600px;
 
 
 text-align: center;
@@ -650,6 +650,10 @@ text-transform: uppercase;
 
 /* =====================PORTFOLIO PAGE====================== */
 
+.projects-section {
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -736,7 +740,6 @@ letter-spacing: 0.03em;
   margin-left: -30px;
 
   padding: 0px;
-  margin: 0px;
 
   list-style: none;
 }
@@ -752,10 +755,6 @@ letter-spacing: 0.03em;
   border-right: 1px solid #EEEEEE; */
 }
 
-.projects-decription {
-  margin-top: 50px;
-  margin-bottom: 94px;
-}
 
 .project-position {
   margin-top: 8px;
