@@ -58,6 +58,7 @@ img {
   color: var(--accent-color);
 }
 
+
 .menu-link:hover,
 .menu-link:focus {
 color: var(--accent-color);
@@ -363,6 +364,31 @@ margin-bottom: 50px;
   display: flex;
     justify-content: center;
 
+}
+
+.feature-box {
+  position: relative;
+}
+
+.feature-box-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  
+  color: #FFFFFF;
+
+  
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+
+  transform: translateY(-100%);  
 }
 
 
