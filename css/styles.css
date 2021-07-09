@@ -132,7 +132,15 @@ margin: 0 auto;
   border-bottom: 1px solid #ECECEC;
 }
 
-  
+/*   .current::after {
+  content: '';
+  display: block;
+  color: var(--accent-color);
+  width: 100%;
+  height: 4px;
+    border-radius: 2px;
+    
+  } */
 
 
 .logo-link {
@@ -167,6 +175,9 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 
 color: var(--main-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .contact-menu {
@@ -188,6 +199,9 @@ display: flex;
 padding: 32px 0px;
 
 align-items: center;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .mail-icon,
@@ -285,6 +299,9 @@ padding: 200px 0;
   text-align: center;
 
   cursor: pointer;
+
+  
+
 
 }
 
@@ -488,7 +505,10 @@ margin-bottom: 0;
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
-  fill: var(--icon-color)
+  fill: var(--icon-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .social-list-icon {
@@ -551,6 +571,9 @@ margin-bottom: 0;
 
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
  .client-icon {
@@ -646,6 +669,9 @@ text-transform: uppercase;
   border-radius: 50%;
   background-color:rgba(255, 255, 255, 0.1);
   fill: var(--section-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .social-link-footer:focus,
@@ -706,6 +732,9 @@ letter-spacing: 0.03em;
   
   border-radius: 4px;
   border-color: transparent;
+
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .menu-projects-button:not(:last-child) {
@@ -743,6 +772,8 @@ letter-spacing: 0.03em;
 .contact-footer-item:hover,
 .contact-footer-item:focus {
   color: var(--accent-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -808,6 +839,44 @@ letter-spacing: 0.03em;
 .menu-projects-button:hover,
 .menu-projects-button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);;
+  
+
+}
+
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  background-color:  rgba(33, 150, 243, 0.9);
+  padding: 63px 23px;
+
+  overflow: auto;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-link:hover .overlay,
+.project-link:focus .overlay {
+  transform: translateY(-100%);
+  
+  
 }
 
 
