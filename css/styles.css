@@ -59,9 +59,7 @@ img {
 }
 
 .menu-link.current::after {
-  content: "";
  transform: scaleX(1);
-
 }
 
 
