@@ -728,6 +728,7 @@ text-transform: uppercase;
 .join-us {
   align-items: center;
   margin-left: 70px;
+  margin-right: 93px;
 
 }
 
@@ -739,6 +740,71 @@ text-transform: uppercase;
   display: flex;
   align-items: baseline;
 }
+
+/* =============== FORM FOOTER ===============*/
+
+.footer-form-head {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--section-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-form-input {
+  display: block;
+  width: 358px;
+  height: 50px;
+
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  padding: 15px 16px;
+  margin-right: 12px;
+}
+
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 0 10px 29px;
+
+  background-color: var(--accent-color);
+  color: var(--section-color);
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  cursor: pointer;
+}
+
+.footer-form-button::after {
+content: "";
+width: 24px;
+height: 24px;
+display: inline-block;
+background-image: url(../images/modalimages/icon\ send.svg);
+margin-left: 10px;
+}
+
+.fotter-form-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
 
 
 /* =====================PORTFOLIO PAGE====================== */
