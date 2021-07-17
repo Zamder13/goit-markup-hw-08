@@ -992,9 +992,16 @@ transform: translate(-50%, -50%) scale(0.8);
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   cursor: pointer;
+  transition: fill 250ms var(--time-animation);
 
 
 }
+
+.close-btn:hover,
+.close-btn:focus {
+  fill: var(--accent-color);
+}
+
 
 .close-icon {
 width: 18px;
@@ -1037,7 +1044,7 @@ color: #212121;
   border-radius: 4px;
   
   padding-left: 42px;
-  transition: border-color 250ms linear;
+  transition: border-color 250ms var(--time-animation);
 }
 
 .modal-form-input:focus,
@@ -1063,7 +1070,7 @@ border-color: var(--accent-color);
   width: 448px;
   height: 120px;
 
-  transition: border-color 250ms linear;
+  transition: border-color 250ms var(--time-animation);
   resize: none;
 }
 
@@ -1090,7 +1097,7 @@ border-color: var(--accent-color);
   width: 18px;
   height: 18px;
 
-  transition: fill 250ms linear;
+  transition: fill 250ms var(--time-animation);
 }
 
 .modal-form-wrapper {
@@ -1110,30 +1117,66 @@ border-color: var(--accent-color);
   height: 50px;
   border-radius: 4px;
   border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   background-color: var(--accent-color);
   color: #FFFFFF;
-
+  
+  cursor: pointer;
+ 
 }
+
+
 
 
 /* ==========================CheckBOx========================== */
 .modal-form-checkbox-label::before {
-  display: block;
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 1px solid tomato;
-  cursor: pointer;
-
-
-}
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
   content: "";
   
-  background-image: url(../images/sprite.svg#icon-form-icon-check);
-  background-size: auto;
+  display: block;
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+
+  border-radius: 4px;
+  border: 1px solid var(--main-color);
+ 
+  margin-right: 8px;
+
+}
+
+.modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+
+.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+
+  
+  background-color: var(--accent-color);
+  background-image: url(../images/maodalimages/checkicon.svg);
   background-repeat: no-repeat;
   background-position: center;
-  object-fit: contain;
+  
+  border-color: transparent;
+  
+}
+
+.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
+
+ outline: 1px solid var(--accent-color);
+ 
+}
+
+.modal-form-label-link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
