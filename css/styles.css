@@ -1110,13 +1110,15 @@ color: #212121;
   border-radius: 4px;
   
   padding-left: 42px;
-  transition: border-color 250ms var(--time-animation);
+  transition: border-color 250ms var(--time-animation), box-shadow 250ms var(--time-animation);
 }
 
 .modal-form-input:focus,
 .modal-form-input:hover {
   outline: none;
-border-color: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .modal-form-input:focus + .modal-form-icon,
