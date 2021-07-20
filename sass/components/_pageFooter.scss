@@ -1,0 +1,162 @@
+.footer {
+  background-color: var(--hero-color);
+
+  padding: 60px 0;
+}
+
+.logo-link-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  display: inline-block;
+  text-align: start;
+
+  color: #ffffff;
+}
+
+.town-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  margin-top: 20px;
+
+  color: var(--section-color);
+}
+
+.contact-footer {
+  margin-top: 9px;
+}
+
+.contact-footer-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  display: inline-block;
+  margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join-us-head {
+  color: var(--section-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.join-us-menu {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.social-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--section-color);
+
+  transition: fill var(--time-animation), background-color var(--time-animation);
+}
+
+.social-link-footer:focus,
+.social-link-footer:hover {
+  background-color: var(--accent-color);
+}
+
+.icon-footer {
+  width: 20px;
+  height: 20px;
+}
+
+.join-us {
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 93px;
+}
+
+.join-us-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: baseline;
+}
+
+/* =============== FORM FOOTER ===============*/
+
+.footer-form-head {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--section-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-form-input {
+  display: block;
+  width: 358px;
+  height: 50px;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  padding: 15px 16px;
+  margin-right: 12px;
+}
+
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 0 10px 29px;
+
+  background-color: var(--accent-color);
+  color: var(--section-color);
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  cursor: pointer;
+}
+
+.footer-form-button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../images/modalimages/icon-send.svg);
+  margin-left: 10px;
+}
+
+.fotter-form-wrapper {
+  display: inline-flex;
+  align-items: center;
+}

@@ -1,0 +1,47 @@
+.second-section {
+  background-color: var(--section-color);
+}
+
+.item {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-color);
+}
+
+.dignity-list {
+  width: 270px;
+}
+
+.dignity-list:not(:last-child),
+.features-menu-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.dignity-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+
+  background-color: var(--buttom-port-color);
+
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+}
+
+.dignity-icon {
+  width: 70px;
+  height: 70px;
+}

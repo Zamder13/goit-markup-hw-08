@@ -1,0 +1,57 @@
+.hero-head {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin: auto;
+
+  color: var(--section-color);
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--hero-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herosection/Hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 1600px;
+
+  text-align: center;
+  padding: 200px 0;
+}
+
+.modal-btn {
+  display: inline-block;
+
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--section-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  border: 1px solid transparent;
+
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+
+  text-align: center;
+
+  cursor: pointer;
+}

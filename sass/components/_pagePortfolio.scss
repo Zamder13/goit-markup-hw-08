@@ -1,0 +1,155 @@
+.projects-section {
+  padding-bottom: 94px;
+}
+
+.port-butn {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+  background-color: #f5f4fa;
+
+  padding: 6px 22px;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+  border-color: transparent;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-projects-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.special-but-style {
+  color: var(--section-color);
+  background-color: var(--accent-color);
+}
+
+.port-butn:hover,
+.port-butn:focus {
+  color: var(--section-color);
+  background-color: var(--accent-color);
+}
+
+.project {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--main-color);
+}
+.project-position {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--paragraph-color);
+}
+
+.contact-footer-item:hover,
+.contact-footer-item:focus {
+  color: var(--accent-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-projects {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* =================ТАблица проэктов=============== */
+
+.projects-decription,
+.comand-section-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-decription {
+  margin-top: -30px;
+  margin-left: -30px;
+
+  padding: 0px;
+
+  list-style: none;
+}
+
+.projects-decription-item {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  width: calc((100% - 90px) / 3);
+
+  /* border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee; */
+}
+
+.project-position {
+  margin-top: 8px;
+}
+
+.pict {
+  padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.menu-projects-button:hover,
+.menu-projects-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 23px;
+
+  overflow: auto;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-link:hover .overlay,
+.project-link:focus .overlay {
+  transform: translateY(-100%);
+}
