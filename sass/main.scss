@@ -1,7 +1,12 @@
+// utils
 @import './utils/variable';
+@import './utils/visuallyHidden';
+// bases
 @import './base/bases';
 @import './base/container';
-@import './utils/visuallyHidden';
+// components
+@import './components/modal-btn';
+// layout
 @import './layout/pageHeader';
 @import './layout/pageHero';
 @import './layout/pageDignity';
