@@ -108,6 +108,17 @@ img {
   color: var(--main-color);
 }
 
+.logo-link-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  text-align: start;
+  color: #ffffff;
+}
+
 .social-list {
   display: flex;
   justify-content: space-between;
@@ -131,6 +142,27 @@ img {
 }
 
 .social-list__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--section-color);
+  transition: fill var(--time-animation), background-color var(--time-animation);
+}
+
+.social-link-footer:focus, .social-link-footer:hover {
+  background-color: var(--accent-color);
+}
+
+.icon-footer {
   width: 20px;
   height: 20px;
 }
@@ -348,11 +380,14 @@ img {
   width: 270px;
 }
 
-.dignity__list:not(:last-child),
-.features-menu-item:not(:last-child) {
+.dignity__list:not(:last-child) {
   margin-right: 30px;
 }
 
+/* .dignity__list:not(:last-child),
+.features-menu-item:not(:last-child) {
+  margin-right: 30px;
+} */
 .dignity__box {
   display: flex;
   justify-content: center;
@@ -407,6 +442,10 @@ img {
   width: 100%;
   height: 70px;
   transform: translateY(-100%);
+}
+
+.features__menu-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .comand__menu-name {
@@ -523,17 +562,6 @@ img {
   padding: 60px 0;
 }
 
-.logo-link-footer {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  display: inline-block;
-  text-align: start;
-  color: #ffffff;
-}
-
 .town-adress {
   font-style: normal;
   font-size: 14px;
@@ -568,28 +596,6 @@ img {
 .join-us-menu {
   display: flex;
   margin-top: 20px;
-}
-
-.social-link-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--section-color);
-  transition: fill var(--time-animation), background-color var(--time-animation);
-}
-
-.social-link-footer:focus,
-.social-link-footer:hover {
-  background-color: var(--accent-color);
-}
-
-.icon-footer {
-  width: 20px;
-  height: 20px;
 }
 
 .join-us {

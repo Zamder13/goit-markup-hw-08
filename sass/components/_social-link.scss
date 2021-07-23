@@ -26,3 +26,26 @@
   width: 20px;
   height: 20px;
 }
+
+.social-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--section-color);
+
+  transition: fill var(--time-animation), background-color var(--time-animation);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.icon-footer {
+  width: 20px;
+  height: 20px;
+}

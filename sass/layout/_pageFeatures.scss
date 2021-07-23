@@ -43,3 +43,7 @@
 
   transform: translateY(-100%);
 }
+
+.features__menu-item:not(:last-child) {
+  margin-right: 30px;
+}

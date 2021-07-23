@@ -20,12 +20,16 @@
 
 .dignity__list {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.dignity__list:not(:last-child),
+/* .dignity__list:not(:last-child),
 .features-menu-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .dignity__box {
   display: flex;
