@@ -38,13 +38,6 @@
   }
 }
 
-/* 
-.menu-link:hover::after,
-.menu-link:focus::after {
-  transform: scaleX(1);
-}
- */
-
 .menu__list .menu__link.current {
   color: var(--accent-color);
 }

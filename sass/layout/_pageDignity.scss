@@ -1,4 +1,4 @@
-.second-section {
+.dignity {
   background-color: var(--section-color);
 }
 
@@ -18,16 +18,16 @@
   color: var(--paragraph-color);
 }
 
-.dignity-list {
+.dignity__list {
   width: 270px;
 }
 
-.dignity-list:not(:last-child),
+.dignity__list:not(:last-child),
 .features-menu-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.dignity-box {
+.dignity__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@
   margin-bottom: 30px;
 }
 
-.dignity-icon {
+.dignity__icon {
   width: 70px;
   height: 70px;
 }
