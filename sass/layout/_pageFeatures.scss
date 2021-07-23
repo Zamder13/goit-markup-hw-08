@@ -1,11 +1,11 @@
-.features-section {
+.features {
   background-color: var(--section-color);
 
   padding-bottom: 94px;
 }
 
-.features-head,
-.comand-head,
+.features__head,
+.comand__head,
 .clients-head {
   font-size: 36px;
   line-height: 1.16;
@@ -15,16 +15,16 @@
   margin-bottom: 50px;
 }
 
-.features-menu {
+.features__menu {
   display: flex;
   justify-content: center;
 }
 
-.feature-box {
+.features__menu-box {
   position: relative;
 }
 
-.feature-box-name {
+.features__menu-box-name {
   display: flex;
   justify-content: center;
   align-items: center;
