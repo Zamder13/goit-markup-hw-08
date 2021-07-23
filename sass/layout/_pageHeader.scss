@@ -1,4 +1,4 @@
-.menu-link {
+.menu__link {
   padding: 32px 0;
   position: relative;
 
@@ -45,12 +45,12 @@
 }
  */
 
-.menu-list .menu-link.current {
+.menu__list .menu__link.current {
   color: var(--accent-color);
 }
 
-.mail-link,
-.tel-link {
+.mail__link,
+.tel__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -72,8 +72,8 @@
   }
 }
 
-.mail-icon,
-.tel-icon {
+.mail__icon,
+.tel__icon {
   display: flex;
   margin-right: 10px;
   width: 16px;
@@ -81,28 +81,28 @@
 
   fill: var(--paragraph-color);
 
-  .mail-link:focus &,
-  .mail-link:hover &,
-  .tel-link:hover &,
-  .tel-link:focus & {
+  .mail__link:focus &,
+  .mail__link:hover &,
+  .tel__link:hover &,
+  .tel__link:focus & {
     fill: var(--accent-color);
   }
 }
 
-.menu-list {
+.menu__list {
   display: flex;
   align-items: center;
-  & .menu-item + .menu-item {
+  & .menu__item + .menu__item {
     margin-left: 50px;
   }
 }
 
-.contact-menu {
+.contact__menu {
   display: flex;
   align-items: center;
   margin-left: auto;
 
-  & .contact-item + .contact-item {
+  & .contact__item + .contact__item {
     margin-left: 50px;
   }
 }
