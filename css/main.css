@@ -133,12 +133,16 @@ img {
 }
 
 .dignity__icon {
-  width: 70px;
+  max-width: 70px;
   height: 70px;
 }
 
 .dignity__wrapper {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 /* .dignity__list {
