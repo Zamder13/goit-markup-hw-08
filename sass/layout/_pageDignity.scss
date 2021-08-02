@@ -1,37 +1,44 @@
 .dignity {
   background-color: var(--section-color);
+
+  &__name {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--paragraph-color);
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+  &__wrapper {
+    background-color: #f5f4fa;
+  }
 }
-
-.item {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  margin-bottom: 10px;
-}
-
-.paragraph {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--paragraph-color);
-}
-
-.dignity__list {
+/* .dignity__list {
   width: 270px;
 
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
+} */
 
 /* .dignity__list:not(:last-child),
 .features-menu-item:not(:last-child) {
   margin-right: 30px;
 } */
 
-.dignity__box {
+/* .dignity__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,9 +50,4 @@
   height: 120px;
 
   margin-bottom: 30px;
-}
-
-.dignity__icon {
-  width: 70px;
-  height: 70px;
-}
+} */
