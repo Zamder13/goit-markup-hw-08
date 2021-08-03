@@ -46,63 +46,21 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--clear-white);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .comand__scroll {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
+  }
+  .comand__item {
+    margin: 15px;
+
+    width: calc((100% - 60px) / 2);
   }
 }
 
-/* .comand {
-  background-color: var(--buttom-port-color);
-
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
-.comand__menu-name {
-  margin: 0px auto 10px auto;
-}
-
-.comand__menu-position {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.comand__menu-wrapper {
-  padding: 30px 32px;
-} */
-
-/* таблица */
-
-/* .comand__menu-item {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  background-color: var(--section-color);
-
-  width: calc((100% - 90px) / 4);
-
-  &:nth-child(4n) {
-    margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .comand__item {
+    width: calc((100% - 120px) / 4);
   }
-  &:nth-last-child(-n + 4) {
-    margin-bottom: 0;
-  }
-  & + & {
-    margin-left: 30px;
-  }
-} */
-/* .comand__menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
-
-/* .comand__menu-item {
-  width: calc ((100% - 90px) / 4)
-
-} */
+}
