@@ -1,5 +1,5 @@
 .dignity {
-  background-color: var(--section-color);
+  background-color: var(--clear-white);
 
   &__item:not(:last-child) {
     @media screen and (max-width: 767px) {
@@ -25,8 +25,7 @@
   }
 
   &__name {
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -34,10 +33,9 @@
   }
 
   &__description {
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, 400, 24px);
     letter-spacing: 0.03em;
-    color: var(--paragraph-color);
+    color: var(--description-text);
   }
 }
 

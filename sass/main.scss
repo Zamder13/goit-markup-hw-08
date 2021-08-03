@@ -1,12 +1,13 @@
 // utils
 @import './utils/variable';
 @import './utils/visuallyHidden';
+@import './utils/mixins';
 // bases
 @import './base/bases';
 @import './base/container';
 // components
 
-// @import './components/modal-btn';
+@import './components/modal-btn';
 // @import './components/logo';
 // @import './components/social-link';
 // @import './components/footer-form';
@@ -14,7 +15,7 @@
 
 // layout
 // @import './layout/pageHeader';
-// @import './layout/pageHero';
+@import './layout/pageHero';
 @import './layout/pageDignity';
 // @import './layout/pageFeatures';
 // @import './layout/pageComand';

@@ -1,30 +1,64 @@
-.hero__head {
-  font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  margin: auto;
-
-  color: var(--section-color);
-}
-
 .hero {
+  background-color: rgba(47, 48, 58, 0.4);
+  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--hero-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/herosection/Hero.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
-  max-width: 1600px;
+  &__head {
+    margin-left: auto;
+    margin-right: auto;
 
-  text-align: center;
-  padding: 200px 0;
+    @include font(26px, 900, 42px);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--clear-white);
+  }
+}
+// mobile
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/inside/mobile/bg-main.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/inside/mobile/bg-main@2x.jpg);
+    }
+  }
+}
+// tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/inside/tablet/bg-main.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/inside/tablet/bg-main@2x.jpg);
+    }
+  }
+}
+// deckstope
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/inside/deckstope/bg-main.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/inside/deckstope/bg-main@2x.jpg);
+    }
+  }
 }
