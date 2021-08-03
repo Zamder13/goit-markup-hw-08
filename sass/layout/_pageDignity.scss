@@ -16,7 +16,7 @@
     margin-bottom: 30px;
     border-radius: 4px;
 
-    background-color: #f5f4fa;
+    background-color: var(--dignity-bg);
   }
 
   &__icon {
@@ -64,30 +64,3 @@
     margin-right: 30px;
   }
 }
-
-/* .dignity__list {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-} */
-
-/* .dignity__list:not(:last-child),
-.features-menu-item:not(:last-child) {
-  margin-right: 30px;
-} */
-
-/* .dignity__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-
-  background-color: var(--buttom-port-color);
-
-  width: 270px;
-  height: 120px;
-
-  margin-bottom: 30px;
-} */

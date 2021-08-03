@@ -6,7 +6,7 @@
   --hero-color: #2f303a;
   --section-color: #ffffff;
   --second-section: #E5E5E5;
-  --buttom-port-color:#F5F4FA;
+  --dignity-bg:#F5F4FA;
   --icon-color: #AFB1B8;
   --main-font: font-family: 'Roboto', sans-serif;
   --special-font: font-family: 'Raleway', sans-serif;
@@ -131,7 +131,7 @@ img {
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: #f5f4fa;
+  background-color: var(--dignity-bg);
 }
 
 .dignity__icon {
@@ -174,29 +174,4 @@ img {
     margin-right: 30px;
   }
 }
-
-/* .dignity__list {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-} */
-/* .dignity__list:not(:last-child),
-.features-menu-item:not(:last-child) {
-  margin-right: 30px;
-} */
-/* .dignity__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-
-  background-color: var(--buttom-port-color);
-
-  width: 270px;
-  height: 120px;
-
-  margin-bottom: 30px;
-} */
 /*# sourceMappingURL=main.css.map */
