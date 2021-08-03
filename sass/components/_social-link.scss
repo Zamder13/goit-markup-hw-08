@@ -1,6 +1,6 @@
-.social-list {
+.social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   &__link {
     display: flex;
@@ -17,7 +17,7 @@
     &:hover,
     &:focus {
       background-color: var(--accent-color);
-      fill: var(--section-color);
+      fill: var(--clear-white);
     }
   }
 
@@ -25,9 +25,13 @@
     width: 20px;
     height: 20px;
   }
+  &__item:not(:last-child) {
+    margin-right: 10px;
+    outline: 1px solid teal;
+  }
 }
 
-.social-link-footer {
+/* .social-link-footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,3 +53,4 @@
   width: 20px;
   height: 20px;
 }
+ */
