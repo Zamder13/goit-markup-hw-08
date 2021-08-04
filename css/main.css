@@ -8,6 +8,9 @@
   --second-section: #E5E5E5;
   --dignity-bg:#F5F4FA;
   --icon-color: #AFB1B8;
+  --footer-element-color: rgba(255, 255, 255, 0.6)
+
+
   --main-font: font-family: 'Roboto', sans-serif;
   --special-font: font-family: 'Raleway', sans-serif;
   --time-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,6 +144,26 @@ img {
   margin-right: auto;
 }
 
+.logo {
+  display: inline-block;
+}
+
+.logo__text {
+  font-family: var(--special-font);
+  /*  font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19; */
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo_footer {
+  color: var(--clear-white);
+  margin-bottom: 20px;
+}
+
 .social {
   display: flex;
   justify-content: center;
@@ -172,29 +195,74 @@ img {
   margin-right: 10px;
 }
 
-/* .social-link-footer {
+.social_footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--clear-white);
+}
+
+.social_footer:hover, .social_footer:focus {
+  background-color: var(--accent-color);
+}
+
+.social_space {
+  margin-bottom: 60px;
+}
+
+.footerForm__head {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.21;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--clear-white);
+}
+
+.footerForm__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+}
+
+.footerForm__button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--section-color);
-
-  transition: fill var(--time-animation), background-color var(--time-animation);
-
-  &:focus,
-  &:hover {
-    background-color: var(--accent-color);
-  }
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  padding: 10px 0 10px 29px;
+  background-color: var(--accent-color);
+  color: var(--clear-white);
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  cursor: pointer;
 }
 
-.icon-footer {
-  width: 20px;
-  height: 20px;
+.footerForm__button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../images/modalimages/icon-send.svg);
+  margin-left: 10px;
 }
- */
+
+/* .fotter-form-wrapper {
+  display: inline-flex;
+  align-items: center;
+} */
 .hero {
   background-color: rgba(47, 48, 58, 0.4);
   max-width: 1600px;
@@ -503,6 +571,7 @@ img {
 
 .client__link:focus, .client__link:hover {
   border-color: var(--accent-color);
+  transform: fill var(--time-animation), border var(--time-animation);
 }
 
 .client__link:focus .client__icon, .client__link:hover .client__icon {
@@ -513,4 +582,88 @@ img {
   width: 106px;
   height: 60px;
 }
+
+.footer {
+  background-color: var(--hero-color);
+}
+
+.first-box {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.town-adress {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.41;
+  letter-spacing: 0.03em;
+  color: var(--clear-white);
+}
+
+.contact__item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.contact__link {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact__link:hover, .contact__link:focus {
+  color: var(--accent-color);
+}
+
+.joinUs__head {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.21;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--clear-white);
+}
+
+/* .contact-footer {
+  margin-top: 9px;
+} */
+/* .contact-footer-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  display: inline-block;
+  margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+} */
+/* .contact-footer-item:hover,
+.contact-footer-item:focus {
+  color: var(--accent-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+/* .join-us__menu {
+  display: flex;
+
+  margin-top: 20px;
+} */
+/* .join-us {
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 93px;
+} */
+/* .join-us__menu-item:not(:last-child) {
+  margin-right: 10px;
+} */
+/* =============== FORM FOOTER ===============*/
 /*# sourceMappingURL=main.css.map */

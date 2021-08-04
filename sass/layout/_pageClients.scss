@@ -48,6 +48,8 @@
   &:focus,
   &:hover {
     border-color: var(--accent-color);
+    transform: fill var(--time-animation), border var(--time-animation);
+
     & .client__icon {
       fill: var(--accent-color);
     }
