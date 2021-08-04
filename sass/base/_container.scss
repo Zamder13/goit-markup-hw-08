@@ -21,3 +21,11 @@
     width: 1170px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}

@@ -4,14 +4,16 @@
 
 .first-box {
   text-align: center;
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .town-adress {
   margin-bottom: 8px;
 
   font-style: normal;
-  @include font(17px, 400, 24px);
+  @include font(14px, 400, 24px);
   letter-spacing: 0.03em;
 
   color: var(--clear-white);
@@ -38,6 +40,7 @@
 
 .joinUs__head {
   margin-bottom: 20px;
+
   @include font(14px, 700, 17px);
   text-align: center;
   text-transform: uppercase;
@@ -45,42 +48,41 @@
   color: var(--clear-white);
 }
 
-/* .contact-footer {
-  margin-top: 9px;
-} */
+@media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
+    .footer__wrapper {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
 
-/* .contact-footer-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+      margin-bottom: 60px;
+    }
+  }
 
-  display: inline-block;
-  margin-top: 9px;
+  .first-box {
+    width: 232px;
+  }
 
-  color: rgba(255, 255, 255, 0.6);
-} */
-/* .contact-footer-item:hover,
-.contact-footer-item:focus {
-  color: var(--accent-color);
+  .joinUs {
+    width: 206px;
+  }
+}
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+  .first-box {
+    width: 232px;
+    margin-right: 70px;
+    text-align: start;
+  }
 
-/* .join-us__menu {
-  display: flex;
-
-  margin-top: 20px;
-} */
-
-/* .join-us {
-  align-items: center;
-  margin-left: 70px;
-  margin-right: 93px;
-} */
-
-/* .join-us__menu-item:not(:last-child) {
-  margin-right: 10px;
-} */
-
-/* =============== FORM FOOTER ===============*/
+  .joinUs {
+    width: 206px;
+  }
+  .joinUs__head {
+    text-align: start;
+  }
+}
