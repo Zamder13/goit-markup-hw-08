@@ -1,50 +1,21 @@
-.projects {
-  padding-bottom: 94px;
-}
-
 .special-but-style {
-  color: var(--section-color);
+  color: var(--clear-white);
   background-color: var(--accent-color);
 }
-
 .product__name {
-  font-size: 18px;
-  line-height: 2;
+  margin-bottom: 8px;
+  @include font(18px, 700, 36px);
+
   letter-spacing: 0.06em;
 
   color: var(--main-color);
 }
 .product__description {
-  margin-top: 8px;
+  @include font(16px, 400, 30px);
 
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.87;
   letter-spacing: 0.03em;
 
-  color: var(--paragraph-color);
-}
-
-/* =================ТАблица проэктов=============== */
-
-.projects-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-
-  margin-top: -30px;
-  margin-left: -30px;
-  padding: 0px;
-}
-
-.product {
-  margin-top: 30px;
-  margin-left: 30px;
-
-  width: calc((100% - 90px) / 3);
-
-  /* border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee; */
+  color: var(--description-text);
 }
 
 .pict {
@@ -76,16 +47,14 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.55;
+  @include font(18px, 7400, 28px);
   letter-spacing: 0.03em;
 
   width: 100%;
   height: 100%;
-  color: #ffffff;
-  background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 23px;
+  color: var(--clear-white);
+  background-color: var(--overlay-color);
+  padding: 77px 24px;
 
   overflow: auto;
 
@@ -97,3 +66,66 @@
 .product__link:focus .overlay {
   transform: translateY(-100%);
 }
+
+@media screen and (min-width: 768px) {
+  .projects__gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+  }
+  .product {
+    display: flex;
+
+    margin: 15px;
+
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  .product__link {
+    display: flex;
+    flex-direction: column;
+  }
+  .pict {
+    flex-grow: 1;
+  }
+
+  .overlay {
+    padding: 49px 24px;
+    overflow: visible;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  .overlay {
+    padding: 63px 24px;
+  }
+}
+
+/* .projects {
+  padding-bottom: 94px;
+} */
+/* =================ТАблица проэктов=============== */
+
+/* .projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  margin-top: -30px;
+  margin-left: -30px;
+  padding: 0px;
+} */
+
+/* .product {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  width: calc((100% - 90px) / 3);
+} */
+/* border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee; */
