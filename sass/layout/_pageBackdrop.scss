@@ -80,10 +80,14 @@
 
 .modal-form-head {
   @include font(20px, 700, 30px);
+
   letter-spacing: 0.03em;
   text-align: center;
 
   color: var(--main-color);
+  @media screen and (min-width: 1200px) {
+    @include font(20px, 700, 24px);
+  }
 }
 
 .modal-form {
@@ -202,6 +206,9 @@
   margin-top: 20px;
 
   @include font(12px, 400, 14px);
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 400, 24px);
+  }
 
   color: #757575;
 
