@@ -2,6 +2,9 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color);
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 /* ==============================Сбросы============================== */
 .list {
