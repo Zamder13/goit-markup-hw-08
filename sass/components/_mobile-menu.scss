@@ -1,5 +1,9 @@
 .menu-container {
   position: fixed;
+
+  display: flex;
+  flex-direction: column;
+
   background-color: var(--clear-white);
   top: 0;
   left: 0;
@@ -9,6 +13,8 @@
 
   transform: translateY(-100%);
   transition: transform var(--time-animation);
+
+  z-index: 999;
 
   // font-family: inherit;
 }
@@ -31,7 +37,6 @@
   &__link {
     display: block;
 
-    // font-family: var(--main-font);
     @include font(40px, 500, 47px);
     letter-spacing: 0.02em;
     color: var(--main-color);
@@ -44,11 +49,15 @@
 
 .mobile-menu {
   background-color: #fff;
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mobile-menu-contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
   margin-bottom: 64px;
+
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -69,6 +78,7 @@
 
 .mobile-menu-social {
   display: flex;
+  flex-wrap: wrap;
 
   &__item {
     display: flex;
