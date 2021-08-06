@@ -383,6 +383,105 @@ img {
   background-color: var(--accent-color);
 }
 
+.menu-container {
+  position: fixed;
+  background-color: var(--clear-white);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  transform: translateY(-100%);
+  transition: transform var(--time-animation);
+}
+
+.menu-container.is-open {
+  transform: translateY(0);
+}
+
+.mobile-close_btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  display: block;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.mob-menu__link:hover, .mob-menu__link:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu {
+  background-color: #fff;
+  margin-bottom: 302px;
+}
+
+.mobile-menu-contact {
+  margin-bottom: 64px;
+}
+
+.mobile-menu-contact__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contact__link_tel {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu-contact__link_mail {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--description-text);
+}
+
+.mobile-menu-social {
+  display: flex;
+}
+
+.mobile-menu-social__item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mobile-menu-social__item:not(:last-child)::after {
+  content: '';
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu-social__link {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
 @media screen and (max-width: 767px) {
   .header {
     border-bottom: 1px solid #ececec;
@@ -393,7 +492,7 @@ img {
   .contact__menu {
     display: none;
   }
-  .burger-btn {
+  .menu-toggle {
     background-color: transparent;
     border: transparent;
     width: 40px;
@@ -401,10 +500,10 @@ img {
     cursor: pointer;
     transition: fill var(--time-animation);
   }
-  .burger-btn:hover, .burger-btnfocus {
+  .menu-toggle:hover, .menu-togglefocus {
     fill: var(--accent-color);
   }
-  .burger-btn__icon {
+  .menu-toggle__icon {
     width: 24px;
     height: 16px;
   }
@@ -419,7 +518,7 @@ img {
   .header {
     border-bottom: 1px solid #ececec;
   }
-  .burger-btn {
+  .menu-toggle {
     display: none;
   }
   .tel__icon {
@@ -984,7 +1083,7 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  font-weight: 7400;
+  font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.03em;
   width: 100%;

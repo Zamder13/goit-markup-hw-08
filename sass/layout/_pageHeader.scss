@@ -9,7 +9,7 @@
     display: none;
   }
 
-  .burger-btn {
+  .menu-toggle {
     background-color: transparent;
     border: transparent;
 
@@ -24,7 +24,7 @@
       fill: var(--accent-color);
     }
   }
-  .burger-btn__icon {
+  .menu-toggle__icon {
     width: 24px;
     height: 16px;
   }
@@ -40,7 +40,7 @@
   .header {
     border-bottom: 1px solid #ececec;
   }
-  .burger-btn {
+  .menu-toggle {
     display: none;
   }
 
