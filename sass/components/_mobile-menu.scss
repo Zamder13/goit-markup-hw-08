@@ -50,6 +50,7 @@
   }
   &__link {
     display: block;
+    transition: color var(--time-animation);
 
     @include font(40px, 500, 47px);
     letter-spacing: 0.02em;
@@ -82,8 +83,13 @@
     font-weight: 500;
     line-height: 1.9em;
     letter-spacing: 0.02em;
+    transition: color var(--time-animation);
 
     color: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: coral;
+    }
   }
   &__link_mail {
     // @include font(24px, 500, 28px);
@@ -91,8 +97,13 @@
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: 0.02em;
+    transition: color var(--time-animation);
 
     color: var(--description-text);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 
@@ -120,10 +131,17 @@
   &__link {
     display: flex;
 
+    transition: color var(--time-animation);
+
     @include font(18px, 500, 22px);
 
     letter-spacing: 0.02em;
 
     color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+      color: coral;
+    }
   }
 }

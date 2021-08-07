@@ -429,6 +429,7 @@ img {
 
 .mob-menu__link {
   display: block;
+  transition: color var(--time-animation);
   font-size: 40px;
   font-weight: 500;
   line-height: 1.18;
@@ -461,7 +462,12 @@ img {
   font-weight: 500;
   line-height: 1.9em;
   letter-spacing: 0.02em;
+  transition: color var(--time-animation);
   color: var(--accent-color);
+}
+
+.mobile-menu-contact__link_tel:hover, .mobile-menu-contact__link_tel:focus {
+  color: coral;
 }
 
 .mobile-menu-contact__link_mail {
@@ -469,7 +475,12 @@ img {
   font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 0.02em;
+  transition: color var(--time-animation);
   color: var(--description-text);
+}
+
+.mobile-menu-contact__link_mail:hover, .mobile-menu-contact__link_mail:focus {
+  color: var(--accent-color);
 }
 
 .mobile-menu-social {
@@ -495,11 +506,16 @@ img {
 
 .mobile-menu-social__link {
   display: flex;
+  transition: color var(--time-animation);
   font-size: 18px;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.mobile-menu-social__link:hover, .mobile-menu-social__link:focus {
+  color: coral;
 }
 
 @media screen and (max-width: 767px) {
