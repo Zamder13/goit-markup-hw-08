@@ -95,6 +95,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .section_clear {
   padding-top: 0;
 }
@@ -166,7 +173,7 @@ img {
 }
 
 .logo__text {
-  font-family: var(--special-font);
+  font-family: Raleway;
   /*  font-weight: 700;
     font-size: 26px;
     line-height: 1.19; */
@@ -715,6 +722,11 @@ img {
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/inside/deckstope/bg-main.jpg);
   }
+  .hero__head {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+  }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -756,6 +768,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .dignity__name {
+    text-align: center;
+  }
 }
 
 .dignity__description {
@@ -815,6 +833,14 @@ img {
 
 .features__wrapper {
   position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .features__head {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+  }
 }
 
 .features__description {
@@ -914,10 +940,16 @@ img {
   .comand__item {
     width: calc((100% - 120px) / 4);
   }
+  .comand__head {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__head {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.62;
@@ -929,6 +961,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__head {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .client__item {
@@ -1039,7 +1080,7 @@ img {
   .footer__wrapper {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 60px;
   }
 }

@@ -1,6 +1,6 @@
 .clients {
   &__head {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @include font(26px, 700, 42px);
     text-align: center;
@@ -12,6 +12,12 @@
     flex-wrap: wrap;
 
     margin: -15px;
+  }
+}
+@media screen and(min-width: 1200px) {
+  .clients__head {
+    @include font(36px, 700, 42px);
+    margin-bottom: 50px;
   }
 }
 

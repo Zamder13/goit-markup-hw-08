@@ -25,6 +25,12 @@
   }
 }
 
+@media screen and(min-width: 1200px) {
+  .features__head {
+    @include font(36px, 700, 42px);
+  }
+}
+
 .features__description {
   position: absolute;
 
